@@ -139,12 +139,13 @@ FILE_PATTERNS          = *.h \
                          *.tcc \
                          conf.py
 RECURSIVE              = YES
-EXCLUDE                =
+EXCLUDE                = @SOURCE_DIR@/README.md
 EXCLUDE_SYMLINKS       = YES
 EXCLUDE_PATTERNS       = */.git/* \
                          @SOURCE_DIR@/**/tests/* \
                          @SOURCE_DIR@/**/scripts/* \
-                         @SOURCE_DIR@/**/docs/*
+                         @SOURCE_DIR@/**/docs/* \
+                         @SOURCE_DIR@/README.md
 EXCLUDE_SYMBOLS        = "std::*" \
                          "ROCPROFILER_ATTRIBUTE" \
                          "ROCPROFILER_API" \
